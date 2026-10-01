@@ -911,7 +911,7 @@ if [ -x /etc/init.d/cowrie ]; then
 fi
 # in case systemd is used
 outlog "Stopping cowrie via systemd"
-[ "$(sudo systemcl is-active cowrie.service)" = "active" ] && sudo systemctl stop cowrie
+[ "$(sudo systemctl is-active cowrie.service)" = "active" ] && sudo systemctl stop cowrie
 
 if [ "$FAST" == "0" ]; then
 
